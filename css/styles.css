@@ -256,11 +256,8 @@
   color: var(--c-red); opacity: 0.18;
 }
 .review-card-featured {
-  grid-column: 1 / -1; background: #fff;
+  background: #fff;
   border-left: 4px solid var(--c-red);
-}
-@media (min-width: 900px) {
-  .review-card-featured { grid-column: span 2; }
 }
 .review-stars { color: #F4B400; font-size: 1.1rem; letter-spacing: 0.1em; }
 .review-card blockquote {
