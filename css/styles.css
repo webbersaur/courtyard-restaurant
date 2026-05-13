@@ -5,7 +5,7 @@
 /* Mobile nav drawer */
 .mobile-nav {
   position: fixed; top: 0; right: 0; bottom: 0; width: min(86vw, 360px);
-  background: var(--c-paper); padding: 96px 28px 32px; z-index: 60;
+  background: var(--c-paper); padding: 88px 32px 40px; z-index: 60;
   transform: translateX(110%); transition: transform .28s ease;
   display: flex; flex-direction: column; gap: 6px;
   box-shadow: -18px 0 48px rgba(0,0,0,0.14);
@@ -32,7 +32,7 @@
 .mobile-nav-close:active { transform: scale(0.94); }
 .mobile-nav-close:focus-visible { outline: 2px solid var(--c-red); outline-offset: 3px; }
 .mobile-nav-link {
-  padding: 14px 4px; font-size: 1.05rem; font-weight: 500;
+  padding: 18px 4px; font-size: 1.05rem; font-weight: 500;
   border-bottom: 1px solid var(--c-line);
 }
 .mobile-nav-call {
