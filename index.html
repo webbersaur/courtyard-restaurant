@@ -170,18 +170,23 @@
       <span></span><span></span><span></span>
     </button>
   </div>
-
-  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
-    <a href="#specials" class="mobile-nav-link">Today's Specials</a>
-    <a href="#menu" class="mobile-nav-link">Menu</a>
-    <a href="#reviews" class="mobile-nav-link">Reviews</a>
-    <a href="#find-us" class="mobile-nav-link">How to Find Us</a>
-    <a href="#hours" class="mobile-nav-link">Hours</a>
-    <a href="#cash-only" class="mobile-nav-link">Cash Only</a>
-    <a href="tel:+18603881821" class="mobile-nav-link mobile-nav-call">Call 860-388-1821</a>
-  </nav>
-  <div class="overlay" id="overlay"></div>
 </header>
+
+<!-- Mobile nav drawer + overlay live outside <header> on purpose:
+     the header has backdrop-filter, which creates a containing block
+     for position:fixed descendants AND a new stacking context, so the
+     drawer would be anchored to the header bar instead of the viewport
+     and trapped behind page content. Placed before </body> below. -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <a href="#specials" class="mobile-nav-link">Today's Specials</a>
+  <a href="#menu" class="mobile-nav-link">Menu</a>
+  <a href="#reviews" class="mobile-nav-link">Reviews</a>
+  <a href="#find-us" class="mobile-nav-link">How to Find Us</a>
+  <a href="#hours" class="mobile-nav-link">Hours</a>
+  <a href="#cash-only" class="mobile-nav-link">Cash Only</a>
+  <a href="tel:+18603881821" class="mobile-nav-link mobile-nav-call">Call 860-388-1821</a>
+</nav>
+<div class="overlay" id="overlay"></div>
 
 <main id="top">
 
