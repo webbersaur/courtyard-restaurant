@@ -14,25 +14,21 @@
 
 .mobile-nav-close {
   position: absolute;
-  top: 22px; right: 22px;
+  top: 18px; right: 18px;
   width: 44px; height: 44px;
   display: flex; align-items: center; justify-content: center;
-  background: transparent; border-radius: 999px;
+  background: var(--c-cream);
+  color: var(--c-ink);
+  border-radius: 999px;
   cursor: pointer;
-  transition: background .2s ease;
+  font-size: 1.9rem;
+  line-height: 1;
+  font-weight: 300;
+  padding: 0;
+  transition: background .2s ease, color .2s ease;
 }
-.mobile-nav-close:hover { background: rgba(184, 40, 40, 0.1); }
+.mobile-nav-close:hover { background: var(--c-red); color: #fff; }
 .mobile-nav-close:focus-visible { outline: 2px solid var(--c-red); outline-offset: 2px; }
-.mobile-nav-close span {
-  position: absolute;
-  width: 22px; height: 2px;
-  background: var(--c-ink);
-  border-radius: 2px;
-  transition: background .15s ease;
-}
-.mobile-nav-close span:nth-child(1) { transform: rotate(45deg); }
-.mobile-nav-close span:nth-child(2) { transform: rotate(-45deg); }
-.mobile-nav-close:hover span { background: var(--c-red); }
 .mobile-nav-link {
   padding: 14px 4px; font-size: 1.05rem; font-weight: 500;
   border-bottom: 1px solid var(--c-line);
