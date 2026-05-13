@@ -182,15 +182,14 @@
 /* MENU ============================== */
 .section-menu { background: var(--c-cream); }
 .menu-tabs {
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto 48px;
   background: var(--c-paper);
   border: 1px solid var(--c-line);
   border-radius: 999px;
   padding: 6px;
-  margin: 0 auto 48px;
   box-shadow: var(--shadow-md);
-  position: relative;
-  left: 50%; transform: translateX(-50%);
 }
 .menu-tab {
   font-family: var(--font-body);
@@ -209,7 +208,7 @@
 .menu-panel.active { display: block; animation: menuFade .35s ease; }
 @keyframes menuFade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 @media (max-width: 480px) {
-  .menu-tabs { width: 100%; left: 0; transform: none; justify-content: center; }
+  .menu-tabs { width: 100%; justify-content: center; }
   .menu-tab { padding: 12px 18px; font-size: 0.85rem; }
 }
 .menu-grid { display: grid; gap: 28px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
