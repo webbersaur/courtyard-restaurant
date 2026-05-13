@@ -308,6 +308,18 @@ body.lightbox-open { overflow: hidden; }
 
 /* FOOTER ============================== */
 .site-footer { background: var(--c-ink); color: #d8d2c7; padding: 64px 0 24px; }
+/* Magic-button: invisible 44x44 corner anchor that deep-links to the portal,
+   page-targeted via ?page=. aria-hidden so screen readers ignore it. */
+.portal-trigger {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  display: block;
+  cursor: default;
+  z-index: 10;
+}
 .footer-grid {
   display: grid; gap: 32px; grid-template-columns: 1.4fr 1fr 1fr 1fr;
   padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.08);

@@ -718,9 +718,10 @@
     <p>© <span id="year"></span> The Courtyard Restaurant · Old Saybrook, CT</p>
     <p>Site by <a href="https://webbersaur.us" target="_blank" rel="noopener">Webbersaurus</a></p>
   </div>
-  <!-- Hidden owner login corner for change-portal — tap bottom-right -->
-  <a href="https://portal.webbersaurus.com/client/login.html?client=courtyard-restaurant"
-     style="position:absolute;bottom:0;right:0;width:44px;height:44px;display:block;cursor:default;"
+  <!-- Magic-button: invisible 44x44 corner anchor → change-portal client login,
+       page-targeted via ?page=. aria-hidden so screen readers ignore it. -->
+  <a class="portal-trigger"
+     href="https://portal.webbersaurus.com/client/login.html?client=courtyard-restaurant&amp;page=index.html"
      aria-hidden="true" tabindex="-1"></a>
 </footer>
 
