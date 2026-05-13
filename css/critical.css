@@ -15,7 +15,7 @@
   --shadow-lg: 0 16px 48px rgba(28,28,28,0.14);
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px; background: var(--c-paper); }
 body {
   font-family: var(--font-body);
   background: var(--c-paper);
