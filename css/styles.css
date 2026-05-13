@@ -43,28 +43,31 @@
 
 /* SPECIALS ============================== */
 .section-specials { background: var(--c-cream); }
-.specials-grid {
-  display: grid; gap: 22px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  min-height: 160px;
+.specials-photo {
+  max-width: 880px; margin: 0 auto; text-align: center;
 }
-.special-card {
-  background: var(--c-paper); border: 1px solid var(--c-line); border-radius: 14px;
-  padding: 22px; box-shadow: var(--shadow-md); display: flex; flex-direction: column; gap: 8px;
-  position: relative; overflow: hidden;
+.specials-photo-frame {
+  background: var(--c-paper);
+  border: 1px solid var(--c-line);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  transform: rotate(-0.5deg);
+  transition: transform .3s ease;
 }
-.special-card::before {
-  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: var(--c-red);
+.specials-photo-frame:hover { transform: rotate(0deg) scale(1.005); }
+.specials-photo-frame img {
+  width: 100%; height: auto; display: block;
+  border-radius: 8px;
+  background: var(--c-cream);
 }
-.special-card h3 { font-size: 1.4rem; }
-.special-card .price { font-weight: 700; color: var(--c-red); font-size: 1.1rem; }
-.special-card p { color: var(--c-mute); }
-.specials-empty {
-  grid-column: 1 / -1; text-align: center; padding: 32px; color: var(--c-mute);
-  background: var(--c-paper); border: 1px dashed var(--c-line); border-radius: 14px;
+.specials-photo figcaption {
+  margin-top: 18px;
+  color: var(--c-mute);
+  font-size: 0.92rem;
+  font-style: italic;
 }
-.specials-empty a { color: var(--c-red); text-decoration: underline; }
-.specials-foot { text-align: center; color: var(--c-mute); font-size: 0.88rem; margin-top: 18px; }
 
 /* CASH ONLY ============================== */
 .section-cash { background: var(--c-red); color: #fff; padding: 96px 0; }
