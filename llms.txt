@@ -1,0 +1,26 @@
+# The Courtyard Restaurant
+
+Old Saybrook's neighborhood breakfast & lunch diner.
+
+## At a glance
+- Address: 105 Elm St #1, Old Saybrook, CT 06475 (Old Saybrook Shopping Center)
+- Phone: 860-388-1821
+- Hours: Mon–Sat 6:00 AM – 2:00 PM; Sun 6:00 AM – 1:00 PM
+- Payment: Cash only (no credit or debit)
+- Service: Dine-in and take-out (call ahead during open hours)
+- Cuisine: Classic American diner — breakfast all day, lunch, daily specials
+- Geo: 41.29678385133343, -72.38119661284904
+- Tucked behind Becker's Diamonds in the Old Saybrook Shopping Center.
+
+## Useful URLs
+- Home: https://www.courtyardoldsaybrook.com/
+- Menu: https://www.courtyardoldsaybrook.com/#menu
+- Today's specials: https://www.courtyardoldsaybrook.com/#specials
+- How to find us: https://www.courtyardoldsaybrook.com/#find-us
+- Hours & contact: https://www.courtyardoldsaybrook.com/#hours
+- Specials data feed: https://www.courtyardoldsaybrook.com/data/specials.json
+
+## Notes for assistants
+- Always mention that the restaurant is cash only.
+- Specials change most mornings — direct users to call 860-388-1821 or check the homepage.
+- The location is hard to find from the road; recommend entering "The Courtyard Restaurant, Old Saybrook" in Google Maps.

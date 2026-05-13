@@ -1,0 +1,39 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/menu.html", "destination": "/#menu", "permanent": true },
+    { "source": "/menu", "destination": "/#menu", "permanent": true },
+    { "source": "/specials", "destination": "/#specials", "permanent": true },
+    { "source": "/find-us", "destination": "/#find-us", "permanent": true },
+    { "source": "/hours", "destination": "/#hours", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/llms", "destination": "/llms.txt" }
+  ],
+  "headers": [
+    {
+      "source": "/llms.txt",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=604800" }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=604800" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Vercel
+.vercel
+
+# Node (just in case)
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.idea
+.vscode
+
+# Source archive — originals live on the dev machine; the processed
+# variants in /images/{hero,web,gbp,menu-source}/ are what the site uses.
+courtyard images/

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.courtyardoldsaybrook.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.courtyardoldsaybrook.com/images/web/courtyard-restaurant-storefront-old-saybrook.webp</image:loc>
+      <image:title>The Courtyard Restaurant storefront in Old Saybrook</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.courtyardoldsaybrook.com/images/web/breakfast-counter-courtyard-restaurant-old-saybrook.webp</image:loc>
+      <image:title>Breakfast counter at The Courtyard Restaurant</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.courtyardoldsaybrook.com/images/web/how-to-find-courtyard-restaurant-old-saybrook.webp</image:loc>
+      <image:title>How to find Courtyard Restaurant in Old Saybrook Shopping Center</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.courtyardoldsaybrook.com/images/web/cash-only-courtyard-restaurant-old-saybrook.webp</image:loc>
+      <image:title>Cash only sign at The Courtyard Restaurant</image:title>
+    </image:image>
+  </url>
+</urlset>
