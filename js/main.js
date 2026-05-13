@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNav.classList.contains('active') ? closeNav() : openNav();
   });
   overlay.addEventListener('click', closeNav);
+  const mobileNavClose = document.getElementById('mobileNavClose');
+  if (mobileNavClose) mobileNavClose.addEventListener('click', closeNav);
   mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && mobileNav.classList.contains('active')) closeNav();
