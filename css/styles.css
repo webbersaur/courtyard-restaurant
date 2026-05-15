@@ -78,7 +78,17 @@ main[id] { scroll-margin-top: 100px; }
   aspect-ratio: 4 / 3;
   background: var(--c-paper);
   box-shadow: var(--shadow-lg);
+  cursor: zoom-in;
+  position: relative;
 }
+.specials-photo::after {
+  content: '⤢'; position: absolute; top: 12px; right: 12px;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: rgba(28,28,28,0.55); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 1rem; opacity: 0; transition: opacity .25s ease;
+}
+.specials-photo:hover::after { opacity: 1; }
 .specials-photo img {
   width: 100%; height: 100%; object-fit: cover; display: block;
 }
