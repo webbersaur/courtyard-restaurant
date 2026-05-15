@@ -73,7 +73,13 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "05:30",
+        "closes": "14:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
         "opens": "06:00",
         "closes": "14:00"
       },
@@ -120,7 +126,7 @@
         "name": "What are The Courtyard Restaurant's hours?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Courtyard Restaurant is open every day for breakfast and lunch — Monday through Saturday from 6:00 AM to 2:00 PM, and Sunday from 6:00 AM to 1:00 PM."
+          "text": "The Courtyard Restaurant is open every day for breakfast and lunch — Monday through Friday from 5:30 AM to 2:00 PM, Saturday from 6:00 AM to 2:00 PM, and Sunday from 6:00 AM to 1:00 PM."
         }
       },
       {
@@ -232,6 +238,17 @@
       </div>
     </div>
     <!-- /section:specials -->
+
+    <div class="weekly-specials animate-on-scroll">
+      <div class="weekly-special">
+        <span class="weekly-day">Every Thursday</span>
+        <strong>Our Famous Pot Roast Special</strong>
+      </div>
+      <div class="weekly-special">
+        <span class="weekly-day">Every Friday</span>
+        <strong>Our Famous Fish &amp; Chips</strong>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -331,10 +348,10 @@
         <article class="menu-card animate-on-scroll">
           <h3>Breakfast</h3>
           <dl class="menu-items">
-            <div><dt>1 Egg, Toast &amp; Home Fries</dt><dd>4.49</dd></div>
-            <div><dt>1 Egg with Bacon, Ham, Sausage or Kielbasa</dt><dd>6.49</dd></div>
-            <div><dt>2 Eggs, Toast &amp; Home Fries</dt><dd>4.99</dd></div>
-            <div><dt>2 Eggs with Bacon, Ham, Sausage or Kielbasa</dt><dd>6.99</dd></div>
+            <div><dt>1 Egg, Toast &amp; Home Fries</dt><dd>4.99</dd></div>
+            <div><dt>1 Egg with Bacon, Ham, Sausage or Kielbasa</dt><dd>6.99</dd></div>
+            <div><dt>2 Eggs, Toast &amp; Home Fries</dt><dd>6.49</dd></div>
+            <div><dt>2 Eggs with Bacon, Ham, Sausage or Kielbasa</dt><dd>8.49</dd></div>
             <div><dt>Corned Beef Hash, 2 Eggs &amp; English Muffin</dt><dd>10.49</dd></div>
           </dl>
         </article>
@@ -343,7 +360,7 @@
           <h3>Griddle Favorites</h3>
           <p class="menu-note">Add fruit to any pancakes, waffle, or French toast +$2</p>
           <dl class="menu-items">
-            <div><dt>The Double Trouble Breakfast<small>2 French toast or 2 pancakes, 2 sausage patties &amp; 2 eggs any style</small></dt><dd>13.99</dd></div>
+            <div><dt>The Double Trouble Breakfast<small>Choice of 2 French toast or 2 pancakes, 2 bacon strips, 2 sausage patties &amp; 2 eggs any style</small></dt><dd>13.99</dd></div>
             <div><dt>French Toast (3)</dt><dd>7.49</dd></div>
             <div><dt>Buttermilk Pancakes (3)</dt><dd>7.49</dd></div>
             <div><dt>Blueberry Pancakes (3)</dt><dd>9.49</dd></div>
@@ -367,7 +384,7 @@
           <p class="menu-note">All omelets served with home fries &amp; toast.</p>
           <dl class="menu-items">
             <div><dt>The Courtyard Omelette<small>Spinach, onion, tomato &amp; cheese</small></dt><dd>10.49</dd></div>
-            <div><dt>Western Omelette<small>Diced ham, peppers &amp; onions</small></dt><dd>9.49</dd></div>
+            <div><dt>Western Omelette<small>Diced ham, peppers &amp; onions, served with home fries &amp; rye toast</small></dt><dd>10.49</dd></div>
             <div><dt>Corned Beef Hash &amp; Cheese Omelette</dt><dd>11.99</dd></div>
           </dl>
           <p class="menu-subhead">Build Your Own Omelette</p>
@@ -387,33 +404,33 @@
             <div><dt>Egg, Meat &amp; Cheese Sandwich<small>Hard roll, English muffin or croissant — choice of bacon, sausage patty, ham or kielbasa, served with home fries</small></dt><dd>8.49</dd></div>
             <div><dt>Western Sandwich<small>Ham, peppers &amp; onions on a hard roll</small></dt><dd>7.49</dd></div>
             <div><dt>Veggie Wrap<small>Scrambled eggs with spinach, tomatoes, onions &amp; cream cheese in a warm tortilla</small></dt><dd>9.99</dd></div>
-            <div><dt>Lumberjack Wrap<small>Ham, sausage, bacon &amp; Jack cheese in a warm tortilla</small></dt><dd>10.49</dd></div>
+            <div><dt>Lumberjack Wrap<small>Scrambled eggs with ham, sausage, bacon &amp; Jack cheese in a warm tortilla</small></dt><dd>10.49</dd></div>
           </dl>
         </article>
 
         <article class="menu-card animate-on-scroll">
-          <h3>Sides</h3>
+          <h3>Side Orders</h3>
           <dl class="menu-items">
-            <div><dt>Hard Roll · English Muffin · Sourdough Toast</dt><dd>2.49</dd></div>
+            <div><dt>Hard Roll · Raisin Toast · Sourdough Toast · English Muffin · Cereal</dt><dd>2.49</dd></div>
             <div><dt>Rye, Whole Wheat or White Toast</dt><dd>2.09</dd></div>
-            <div><dt>Baked Muffin</dt><dd>2.49</dd></div>
+            <div><dt>Baked Muffin</dt><dd>3.49</dd></div>
             <div><dt>Corned Beef Hash</dt><dd>5.99</dd></div>
-            <div><dt>Bacon, Ham, Sausage, Kielbasa or Canadian Bacon</dt><dd>5.99</dd></div>
-            <div><dt>Home Fries</dt><dd>3.49</dd></div>
-            <div><dt>Courtyard Corn Bread</dt><dd>3.99</dd></div>
+            <div><dt>Bacon, Ham, Sausage, Kielbasa or Canadian Bacon</dt><dd>4.29</dd></div>
+            <div><dt>Home Fries</dt><dd>3.99</dd></div>
+            <div><dt>Courtyard Corn Bread</dt><dd>3.49</dd></div>
             <div><dt>Biscuits &amp; Gravy</dt><dd>5.99</dd></div>
+            <div><dt>Hollandaise Sauce</dt><dd>2.49</dd></div>
             <div><dt>Oatmeal</dt><dd>3.99</dd></div>
-            <div><dt>Bagel / with Cream Cheese</dt><dd>2.99 / 4.49</dd></div>
-            <div><dt>Fresh Fruit — Cup / Bowl</dt><dd>3.99 / 5.99</dd></div>
+            <div><dt>Bagel / with Cream Cheese</dt><dd>2.99 / 3.99</dd></div>
+            <div><dt>Fresh Fruit — Cup / Bowl</dt><dd>4.49 / 5.99</dd></div>
           </dl>
         </article>
 
         <article class="menu-card animate-on-scroll">
-          <h3>Kids</h3>
+          <h3>Kids Menu</h3>
           <dl class="menu-items">
-            <div><dt>Kid-Size Pancake or French Toast<small>With one egg any style + bacon, sausage patty or ham</small></dt><dd>7.49</dd></div>
-            <div><dt>Kids Scrambled Egg<small>With cheese, home fries &amp; toast</small></dt><dd>4.29</dd></div>
-            <div><dt>Kids Scrambled Egg with Bacon, Sausage Patty or Ham</dt><dd>4.99</dd></div>
+            <div><dt>Kid-Size Pancake or French Toast<small>With 1 egg any style &amp; choice of bacon strips, sausage patty or ham</small></dt><dd>7.49</dd></div>
+            <div><dt>Kids Scrambled Egg<small>With any cheese, home fries &amp; toast, plus bacon strips, sausage patty or ham</small></dt><dd>7.49</dd></div>
           </dl>
         </article>
 
@@ -440,21 +457,22 @@
           <h3>Lunch</h3>
           <p class="menu-note">Add French fries or coleslaw +$2.49</p>
           <dl class="menu-items">
-            <div><dt>Hot Dog</dt><dd>5.49</dd></div>
-            <div><dt>Courtyard Dog<small>Chili, cheese &amp; onions</small></dt><dd>6.99</dd></div>
-            <div><dt>Hamburger (6 oz)</dt><dd>7.74</dd></div>
-            <div><dt>Cheeseburger (6 oz)</dt><dd>8.49</dd></div>
-            <div><dt>BLT</dt><dd>7.49</dd></div>
-            <div><dt>Tuna Salad</dt><dd>8.49</dd></div>
-            <div><dt>Tuna Melt</dt><dd>9.49</dd></div>
-            <div><dt>Egg Salad</dt><dd>5.99</dd></div>
+            <div><dt>Hot Dog<small>Add kraut +$0.50</small></dt><dd>5.49</dd></div>
+            <div><dt>Courtyard Hot Dog<small>With bacon &amp; cheese</small></dt><dd>7.99</dd></div>
+            <div><dt>Hamburger (6 oz)</dt><dd>6.99</dd></div>
+            <div><dt>Cheeseburger (6 oz)</dt><dd>7.74</dd></div>
+            <div><dt>Courtyard Burger<small>6 oz with bacon &amp; cheese</small></dt><dd>9.99</dd></div>
             <div><dt>Chicken Salad</dt><dd>6.99</dd></div>
             <div><dt>Turkey Salad</dt><dd>6.99</dd></div>
-            <div><dt>Grilled Cheese</dt><dd>6.49</dd></div>
+            <div><dt>Egg Salad</dt><dd>5.99</dd></div>
+            <div><dt>BLT</dt><dd>6.99</dd></div>
+            <div><dt>Tuna Salad</dt><dd>7.49</dd></div>
+            <div><dt>Tuna Melt</dt><dd>8.49</dd></div>
+            <div><dt>Grilled Cheese</dt><dd>5.49</dd></div>
             <div><dt>Grilled Cheese with Ham, Bacon or Tomato</dt><dd>7.49</dd></div>
-            <div><dt>Patty Melt<small>Hamburger with grilled onions &amp; cheddar on grilled rye</small></dt><dd>9.99</dd></div>
+            <div><dt>Patty Melt<small>6 oz burger with grilled onions &amp; cheddar on grilled rye bread</small></dt><dd>9.99</dd></div>
             <div><dt>Roast Beef Melt<small>Swiss, mushrooms &amp; onions on rye</small></dt><dd>9.99</dd></div>
-            <div><dt>Turkey Wrap<small>Turkey, bacon, lettuce, tomato &amp; honey-mustard</small></dt><dd>8.99</dd></div>
+            <div><dt>Turkey Wrap<small>Turkey, bacon, lettuce, tomatoes &amp; honey-mustard dressing</small></dt><dd>8.99</dd></div>
           </dl>
         </article>
 
@@ -471,13 +489,27 @@
         </article>
 
         <article class="menu-card animate-on-scroll">
+          <h3>Side Orders</h3>
+          <dl class="menu-items">
+            <div><dt>French Fries</dt><dd>4.99</dd></div>
+            <div><dt>Sweet Potato Fries</dt><dd>4.99</dd></div>
+            <div><dt>Chicken Wings</dt><dd>8.49</dd></div>
+            <div><dt>Chicken Tenders</dt><dd>8.49</dd></div>
+            <div><dt>Mozzarella Sticks</dt><dd>5.99</dd></div>
+            <div><dt>Cole Slaw</dt><dd>2.99</dd></div>
+          </dl>
+        </article>
+
+        <article class="menu-card animate-on-scroll">
           <h3>Salads &amp; Soups</h3>
           <dl class="menu-items">
             <div><dt>Garden Salad</dt><dd>6.99</dd></div>
-            <div><dt>Chef Salad<small>Ham, turkey, cheese &amp; roast beef on garden salad</small></dt><dd>12.99</dd></div>
+            <div><dt>Chef Salad<small>Garden salad with ham, turkey, cheese &amp; roast beef</small></dt><dd>12.99</dd></div>
             <div><dt>Caesar Salad</dt><dd>6.99</dd></div>
-            <div><dt>Tuna or Egg Salad Plate</dt><dd>8.59</dd></div>
-            <div><dt>Greek Salad<small>With olives &amp; feta</small></dt><dd>8.89</dd></div>
+            <div><dt>Tuna Salad</dt><dd>8.99</dd></div>
+            <div><dt>Egg Salad</dt><dd>7.99</dd></div>
+            <div><dt>Egg Salad, Tuna &amp; Cole Slaw</dt><dd>8.89</dd></div>
+            <div><dt>Greek Salad<small>With olives &amp; feta cheese</small></dt><dd>11.99</dd></div>
             <div><dt>Chowder (Daily) — Cup / Bowl</dt><dd>3.99 / 4.99</dd></div>
             <div><dt>Soup of the Day — Cup / Bowl</dt><dd>2.99 / 3.99</dd></div>
           </dl>
@@ -507,7 +539,7 @@
       </div>
     </div>
 
-    <p class="menu-allergy">⚠ Thoroughly cooking meats, poultry, seafood, shellfish, or eggs reduces the risk of foodborne illness.</p>
+    <p class="menu-allergy">⚠ Many of our menu items contain nuts and/or are prepared on shared equipment. Thoroughly cooking meats, poultry, seafood, shellfish, or eggs reduces the risk of foodborne illness.</p>
   </div>
 </section>
 
@@ -671,11 +703,11 @@
       <h2>Hours</h2>
       <table class="hours-table">
         <tbody>
-          <tr><th>Monday</th><td>6:00 AM – 2:00 PM</td></tr>
-          <tr><th>Tuesday</th><td>6:00 AM – 2:00 PM</td></tr>
-          <tr><th>Wednesday</th><td>6:00 AM – 2:00 PM</td></tr>
-          <tr><th>Thursday</th><td>6:00 AM – 2:00 PM</td></tr>
-          <tr><th>Friday</th><td>6:00 AM – 2:00 PM</td></tr>
+          <tr><th>Monday</th><td>5:30 AM – 2:00 PM</td></tr>
+          <tr><th>Tuesday</th><td>5:30 AM – 2:00 PM</td></tr>
+          <tr><th>Wednesday</th><td>5:30 AM – 2:00 PM</td></tr>
+          <tr><th>Thursday</th><td>5:30 AM – 2:00 PM</td></tr>
+          <tr><th>Friday</th><td>5:30 AM – 2:00 PM</td></tr>
           <tr><th>Saturday</th><td>6:00 AM – 2:00 PM</td></tr>
           <tr><th>Sunday</th><td>6:00 AM – 1:00 PM</td></tr>
         </tbody>
@@ -714,7 +746,7 @@
     </div>
     <div>
       <h4>Hours</h4>
-      <p>Mon – Sat: 6 AM – 2 PM<br>Sunday: 6 AM – 1 PM</p>
+      <p>Mon – Fri: 5:30 AM – 2 PM<br>Saturday: 6 AM – 2 PM<br>Sunday: 6 AM – 1 PM</p>
     </div>
     <div>
       <h4>Heads up</h4>

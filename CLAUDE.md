@@ -4,7 +4,7 @@ Guidance for Claude Code when working with this repo.
 
 ## Project
 
-Static single-page website for **The Courtyard Restaurant**, a cash-only breakfast & lunch diner at 105 Elm St #1, Old Saybrook, CT 06475 (Old Saybrook Shopping Center). Phone 860-388-1821. Open Mon–Sat 6:00 AM – 2:00 PM, Sun 6:00 AM – 1:00 PM. Geo: 41.29678385133343, -72.38119661284904.
+Static single-page website for **The Courtyard Restaurant**, a cash-only breakfast & lunch diner at 105 Elm St #1, Old Saybrook, CT 06475 (Old Saybrook Shopping Center). Phone 860-388-1821. Open Mon–Fri 5:30 AM – 2:00 PM, Sat 6:00 AM – 2:00 PM, Sun 6:00 AM – 1:00 PM. Geo: 41.29678385133343, -72.38119661284904.
 
 SEO goals: rank for "restaurant in Old Saybrook," "lunch in Old Saybrook," "Old Saybrook breakfast specials."
 
