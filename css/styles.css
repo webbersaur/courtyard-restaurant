@@ -250,6 +250,9 @@ main[id] { scroll-margin-top: 100px; }
   .menu-tab { padding: 12px 18px; font-size: 0.85rem; }
 }
 .menu-grid { display: grid; gap: 28px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.menu-card-wide { grid-column: 1 / -1; }
+.menu-card-wide .menu-items { columns: 14rem; column-gap: 48px; }
+.menu-card-wide .menu-items > div { break-inside: avoid; }
 .menu-card {
   background: var(--c-paper); border: 1px solid var(--c-line); border-radius: 14px;
   padding: 28px; box-shadow: var(--shadow-md);
