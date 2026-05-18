@@ -64,6 +64,8 @@ supabase db push
 # then walk through the generated checklist
 ```
 
+**Admin notification email:** `8603735453@tmomail.net` — T-Mobile email-to-SMS gateway for the owner's phone (860-373-5453). Sending here delivers as a text. Note: carrier email-to-SMS gateways are increasingly rate-limited/unreliable; treat as best-effort, not transactional.
+
 ## Conventions
 
 - Image filenames: lowercase, hyphenated, keyword-rich (e.g., `breakfast-counter-courtyard-restaurant-old-saybrook.webp`).
