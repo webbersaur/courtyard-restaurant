@@ -57,14 +57,14 @@ When ready, run from the change-portal repo:
 node scripts/new-client.js --slug courtyard-restaurant \
   --domain courtyardoldsaybrook.com \
   --github-repo <owner>/<repo> \
-  --owner-email jaramillo2898@gmail.com \
+  --owner-email Courtyardjara2024@gmail.com \
   --primary "#B82828" \
   --clean-urls
 supabase db push
 # then walk through the generated checklist
 ```
 
-**Admin notification email:** `8603735453@tmomail.net` — T-Mobile email-to-SMS gateway for the owner's phone (860-373-5453). Sending here delivers as a text. Note: carrier email-to-SMS gateways are increasingly rate-limited/unreliable; treat as best-effort, not transactional.
+**Owner contact email:** `Courtyardjara2024@gmail.com` — used for change-portal onboarding, owner login, and notifications. (Replaces the old `jaramillo2898@gmail.com`, which the owner was locked out of.)
 
 ## Conventions
 
