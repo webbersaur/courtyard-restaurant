@@ -75,7 +75,6 @@ main[id] { scroll-margin-top: 100px; }
 .specials-photo {
   border-radius: 14px;
   overflow: hidden;
-  aspect-ratio: 4 / 3;
   background: var(--c-paper);
   box-shadow: var(--shadow-lg);
   cursor: zoom-in;
@@ -90,7 +89,7 @@ main[id] { scroll-margin-top: 100px; }
 }
 .specials-photo:hover::after { opacity: 1; }
 .specials-photo img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
+  width: 100%; height: auto; display: block;
 }
 .specials-detail { text-align: left; }
 .specials-label {
