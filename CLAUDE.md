@@ -66,6 +66,8 @@ supabase db push
 
 **Owner contact email:** `Courtyardjara2024@gmail.com` — used for change-portal onboarding, owner login, and notifications. (Replaces the old `jaramillo2898@gmail.com`, which the owner was locked out of.)
 
+As of the 2026-06-03 migration `20260603000000_courtyard_owner_email_to_jara2024.sql` (in the change-portal repo), the live Supabase `client_invites` row and `clients.notification_emails` for `courtyard-restaurant` both point at this address, so the owner's magic-link sign-in will link them as `client_owner`. The invite email is stored lowercase (`courtyardjara2024@gmail.com`) because `handle_new_user()` matches on `auth.users.email`, which Supabase lowercases. The original seed migration (`20260513180941_seed_courtyard-restaurant.sql`) still narrates the old address — that's immutable history, superseded by the newer migration.
+
 ## Conventions
 
 - Image filenames: lowercase, hyphenated, keyword-rich (e.g., `breakfast-counter-courtyard-restaurant-old-saybrook.webp`).
