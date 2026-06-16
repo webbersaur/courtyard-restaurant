@@ -66,11 +66,17 @@ main[id] { scroll-margin-top: 100px; }
 .section-specials { background: var(--c-cream); }
 .specials-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 48px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 28px;
   max-width: 1080px;
   margin: 0 auto;
+}
+.specials-photo-date {
+  margin: 0;
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--c-mute);
+  font-style: italic;
 }
 .specials-photo {
   border-radius: 14px;

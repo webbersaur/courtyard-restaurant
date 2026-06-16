@@ -229,11 +229,10 @@
     <!-- section:specials -->
     <div class="specials-grid animate-on-scroll">
       <div class="specials-photo lightbox-trigger" id="featured-photo">
-          <img src="images/1781626837901-b3ce7d5c.webp" alt="specials" style="width:100%;height:auto;display:block;">
-        </div>
-        </div>
+        <img src="images/1781626837901-b3ce7d5c.webp" alt="Today's specials board" style="width:100%;height:auto;display:block;">
+      </div>
+      <p class="specials-photo-date" id="specials-photo-date"></p>
       <div class="specials-detail">
-        <span class="specials-label">Today's Special</span>
         <h3>From the whiteboard</h3>
         <p>Our specials change most mornings — the kitchen snaps a photo of today's board so you can see what's on before you come in. Until the next update, pop in or call <a href="tel:+18603881821">860-388-1821</a>. We're open until 2 PM.</p>
         <div class="weekly-specials">
@@ -744,5 +743,22 @@
 </footer>
 
 <script src="/js/main.js?v=2" defer></script>
+<script>
+  // Stamp the specials photo with its upload date. The portal names each
+  // uploaded photo "<epoch-ms>-<hash>.<ext>", so the date is read straight
+  // from the filename — no backend needed, and it updates on every new drop.
+  (function () {
+    var img = document.querySelector('#featured-photo img');
+    var el = document.getElementById('specials-photo-date');
+    if (!img || !el) return;
+    var m = (img.getAttribute('src') || '').match(/\/(\d{10,})-/);
+    if (!m) return;
+    var d = new Date(parseInt(m[1], 10));
+    if (isNaN(d.getTime())) return;
+    el.textContent = 'Updated ' + d.toLocaleDateString('en-US', {
+      month: 'long', day: 'numeric', year: 'numeric'
+    });
+  })();
+</script>
 </body>
 </html>
