@@ -72,13 +72,16 @@ main[id] { scroll-margin-top: 100px; }
   margin: 0 auto;
 }
 .specials-photo-date {
-  margin: 0;
+  max-width: 760px;
+  margin: 10px auto 0;
   text-align: right;
   font-size: 0.85rem;
   color: var(--c-mute);
   font-style: italic;
 }
 .specials-photo {
+  max-width: 760px;
+  margin: 0 auto;
   border-radius: 14px;
   overflow: hidden;
   background: var(--c-paper);
