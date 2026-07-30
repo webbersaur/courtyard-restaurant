@@ -3,25 +3,14 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "courtyard-restaurant.vercel.app"
         }
       ],
-      "destination": "https://www.courtyardoldsaybrook.com/",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "courtyard-restaurant.vercel.app"
-        }
-      ],
-      "destination": "https://www.courtyardoldsaybrook.com/:path*",
+      "destination": "https://www.courtyardoldsaybrook.com/$1",
       "permanent": true
     },
     {
