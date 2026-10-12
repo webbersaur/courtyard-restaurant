@@ -31,6 +31,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="/css/critical.css?v=2">
   <link rel="stylesheet" href="/css/styles.css?v=2">
+  <style>
+    /* Specials paused until the owner posts a new photo. Keyed on the stale
+       photo's filename, so the next portal upload brings the section (and
+       every link to it) back automatically. Delete this block afterwards. */
+    #specials:has(img[src*="1791299998398-f7dd4f00"]),
+    body:has(#specials img[src*="1791299998398-f7dd4f00"]) a[href="#specials"] { display: none; }
+  </style>
 
   <script type="application/ld+json">
   {
